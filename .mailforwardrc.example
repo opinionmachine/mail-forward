@@ -1,0 +1,31 @@
+[mail]
+# Mail spool file location (Unix mail spool)
+# On macOS, this is typically /var/mail/username
+spool_file = /var/mail/username
+
+# Email address to forward mail to
+forward_to = your-email@example.com
+
+# How often to check for new mail (in seconds)
+check_interval = 60
+
+# Delete messages from spool after successful forwarding (default: true)
+delete_after_forward = true
+
+# OAuth2 Configuration
+[oauth2]
+enabled = true
+
+# Azure App Registration Client ID (get from Azure Portal)
+# See OAUTH2_SETUP.md for detailed setup instructions
+client_id = YOUR_CLIENT_ID_HERE
+
+# For personal Microsoft accounts: Leave client_secret empty or omit it
+# For work/school accounts: Set your client secret here
+# client_secret = 
+
+# Use "common" for personal Microsoft accounts
+tenant_id = common
+
+# Email address to send from (must match your Microsoft account)
+from_email = your-email@example.com
